@@ -1,0 +1,107 @@
+AntiUser kick_message: 'Same nick is already playing, please change nick.'
+Events:
+  Join: '&eBem vindo &7{player}'
+  Quit: '&7{player} &esaiu.'
+  Death:
+    Damage: '&4{player} &cmorreu para o jogador &4{killer}'
+    None: '&4{player} &cmorreu.'
+AutoMsg:
+  Delay: 30
+  Mensagens:
+    - 'A'
+    - 'B'
+Spawn:
+  Defined: '&aTeleportando para o spawn'
+  Not: '&cSpawn não definido'
+Reparar:
+  Price: 1000.0
+  Sem money: '&cVocê não possui dinheiro para isso'
+  Sem itens: '&cVocê não possui itens para ser reparado'
+  Reparado: '&cVocê reparou {amount} itens e pagou {price}'
+  Reparaveis:
+    - 'IRON_SPADE'
+    - 'IRON_PICKAXE'
+    - 'IRON_AXE'
+    - 'IRON_SWORD'
+    - 'WOOD_SWORD'
+    - 'WOOD_SPADE'
+    - 'WOOD_PICKAXE'
+    - 'WOOD_AXE'
+    - 'DIAMOND_SWORD'
+    - 'DIAMOND_SPADE'
+    - 'DIAMOND_PICKAXE'
+    - 'DIAMOND_AXE'
+    - 'GOLD_SWORD'
+    - 'GOLD_SPADE'
+    - 'GOLD_PICKAXE'
+    - 'GOLD_AXE'
+    - 'WOOD_HOE'
+    - 'IRON_HOE'
+    - 'DIAMOND_HOE'
+    - 'GOLD_HOE'
+    - 'LEATHER_HELMET'
+    - 'LEATHER_CHESTPLATE'
+    - 'LEATHER_LEGGINGS'
+    - 'LEATHER_BOOTS'
+    - 'CHAINMAIL_HELMET'
+    - 'CHAINMAIL_CHESTPLATE'
+    - 'CHAINMAIL_LEGGINGS'
+    - 'CHAINMAIL_BOOTS'
+    - 'IRON_HELMET'
+    - 'IRON_CHESTPLATE'
+    - 'IRON_LEGGINGS'
+    - 'IRON_BOOTS'
+    - 'DIAMOND_HELMET'
+    - 'DIAMOND_CHESTPLATE'
+    - 'DIAMOND_LEGGINGS'
+    - 'DIAMOND_BOOTS'
+    - 'GOLD_HELMET'
+    - 'GOLD_CHESTPLATE'
+    - 'GOLD_LEGGINGS'
+    - 'GOLD_BOOTS'
+Tpa:
+  Delay:
+    Tempo: 5
+    DelayPraExpirar: 30
+  Mensagens:
+    Ajuda:
+      - '&a/tpa <jogador> &7- Enviar um pedido de teletransporte.'
+      - '&a/tpa aceitar <jogador> &7- Aceitar um pedido de teletransporte.'
+      - '&a/tpa negar <jogador> &7- Negar um pedido de teletransporte.'
+      - '&a/tpa cancelar <jogador> &7- Cancelar um pedido de teletransporte.'
+    Offline:
+      - '&cEste usuário não está online.'
+      - "&cUtilize '/tpa ajuda' para obter ajuda."
+    Jogador:
+      MSG_2: '&cO pedido de teleporte enviado para {tag_target}{target} &cexpirou.'
+      MSG_3:
+        - '{tag_target}{target} &aaceitou seu pedido de teletransporte.'
+        - '&aTeletransportando em 5 segundos para {tag_target}{target}&a.'
+        - '&aNão se mova, ou o tpa será cancelado.'
+      MSG_4: '&cVocê se mexeu, portanto o tpa foi cancelado.'
+      MSG_5: '&aTeleportado para {tag_target}{target}'
+      MSG_6: '&aPedido aceito.'
+      MSG_7: '&a{tag_player}{player} &ccancelou o pedido de teletransporte.'
+      MSG_8: '&cPedido cancelado.'
+      MSG_9: '{tag_target}{target} &cnegou seu pedido de teletransporte.'
+      MSG_10: '&cPedido negado.'
+      MSG_11: '&cVocê já enviou um pedido de teleporte recente para este jogador.'
+      MSG_12: '&cVocê não pode usar em si mesmo.'
+      MSG_13: '&cEste jogador não lhe enviou um pedido de teleporte.'
+      MSG_14: '&cVocê não enviou um pedido de teleporte para este jogador.'
+      MSG_15: '&cEste jogador está com tpa desativado.'
+      MSG_16: '&cTpa desativado.'
+      MSG_17: '&aTpa ativado.'
+  Groups:
+    master:
+      Priority: 0
+      Permission: tpa.master
+      Prefix: '&6[Master]'
+    vip1:
+      Priority: 1
+      Permission: tpa.vip1
+      Prefix: '&a[VIP 1]'
+    vip2:
+      Priority: 2
+      Permission: tpa.vip2
+      Prefix: '&a[VIP 2]'

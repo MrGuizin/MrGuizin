@@ -1,0 +1,38 @@
+name: RedWinsUtil
+main: bd.pablo.redwinsutil.Main
+version: BETA
+author: MrGuizin_
+softdepend:
+  - Vault
+  - HolographicDisplays
+  - WorldGuard
+commands:
+  trocartag:
+  reparar:
+  linhagem:
+  luz:
+  ajuda:
+  tickets:
+  zombiecoins:
+  recompensa:
+  dracma:
+  mercadodeus:
+  npcdeus:
+    permission: redwins.admin
+    permission-message: §cApenas staff
+  npctartaro:
+    permission: redwins.admin
+    permission-message: §cApenas staff
+  npclinhagem:
+    permission: redwins.admin
+    permission-message: §cApenas staff
+  npcdracma:
+    permission: redwins.admin
+    permission-message: §cApenas staff
+  KitMenu:
+  discord:
+  lixeira:
+    aliases: [lixo]
+  npcspawn:
+    permission: redwins.admin
+    permission-message: §cApenas staff
